@@ -37,5 +37,5 @@
     ; DO NOT depend on it with actual functionality
     :meta "test system"
     :elastic (new-elasticsearch-db
-               [["localhost" 9300] ["localhost" 9301]]
+               [["localhost" 9300]]
                {"cluster.name" "elasticsearch_pair"})))

@@ -32,4 +32,5 @@ For testing you can open a repl and index your first tweet :)
             {"user"     "kimchy"
              "postDate" (Date.)
              "message"  "trying out Elasticsearch again :)"})
+(com.stuartsierra.component/stop test-sys)
 ```

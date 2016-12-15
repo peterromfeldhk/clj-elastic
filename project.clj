@@ -12,6 +12,5 @@
    [org.elasticsearch.client/transport "5.1.1"]
 
    ]
-  :source-paths
-  ["src" "test"]
-  )
+  :resource-paths ["resources"]
+  :source-paths ["src" "test"])
