@@ -20,3 +20,16 @@ you can also install kibana and check it out at `http://localhost:5601`
 brew install kibana
 brew services start kibana
 ```
+
+For testing you can open a repl and index your first tweet :)
+```clojure
+(require '[clj-elastic.main :as main]
+         '[clj-elastic.sys :as sys])
+(import 'java.util.Date)
+
+(def test-sys (com.stuartsierra.component/start (sys/test-sys)))
+(main/index test-sys "twitter" "tweet"
+            {"user"     "kimchy"
+             "postDate" (Date.)
+             "message"  "trying out Elasticsearch again :)"})
+```

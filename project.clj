@@ -4,6 +4,8 @@
   :dependencies
   [[org.clojure/clojure "1.8.0"]
 
+   [org.danielsz/system "0.3.1"]
+
    [org.apache.logging.log4j/log4j-core "2.7"]
    [org.apache.logging.log4j/log4j-api "2.7"]
 
